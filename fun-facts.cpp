@@ -24,4 +24,5 @@ int main() {
 	facts.push_back("My favorite quote is 'Everyone you'll ever meet knows something you don't' by Bill Nye.");
 	facts.push_back("My favorite video game is Destiny");
 	facts.push_back("I programmed a Pokemon text-adventure in Java");
+	facts.push_back("So far, my favorite movie of 2018 is Black Panther");
 }
