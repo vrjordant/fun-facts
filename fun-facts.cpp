@@ -6,11 +6,17 @@
  */
 #include <vector>
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <string>
 
 using namespace std;
 
 int main() {
+
 	vector<string> facts;
+
+	// Initialize the facts
 	facts.push_back("I have Tourette's Syndrome");
 	facts.push_back("I play Pokemon songs on the piano");
 	facts.push_back("When I go to sleep, I count sheep in hexadecimal");
@@ -30,8 +36,30 @@ int main() {
 	facts.push_back("Last semester, I worked as a tutor for the Academic Support Center");
 	facts.push_back("My New Year's resolution for 2018 is to be able to touch my toes (it was also last year's too)");
 	facts.push_back("My favorite anime is Haikyu!!");
+
+	// meme facts
 	facts.push_back("My favorite YouTube video is https://www.youtube.com/watch?v=dQw4w9WgXcQ :)");
 	facts.push_back("Actually, my real favorite YouTube video is https://www.youtube.com/watch?v=aT8ix3ZNlLM");
 
-	
+	// generates a random number
+	srand((unsigned)time(0));
+	int random_integer;
+	bool another = false;
+	string response;
+
+	// while loop allows for endless random facts
+	do {
+		random_integer = rand() % facts.size();
+		cout << "Fact: " << facts[random_integer] << endl;
+		cout << "Would you like another fun fact? (y/n) ";
+		cin >> response;
+		if (response == "y") {
+			another = true;
+		}
+		else {
+			another = false;
+		}
+	}
+	while (another);
+	return 0;
 }
