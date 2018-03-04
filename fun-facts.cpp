@@ -12,9 +12,26 @@
 
 using namespace std;
 
+void rickroll() {
+	string response;
+	cout << "Would you like another fun fact? (y/n) ";
+	cin >> response;
+	// print the real video
+	if (response == "y") {
+		cout << "Fact: Actually, my real favorite YouTube video is https://www.youtube.com/watch?v=aT8ix3ZNlLM :)" << endl;
+	}
+	// exit the program
+	else {
+		exit(0);
+	}
+}
+
 int main() {
 
 	vector<string> facts;
+
+	// rick roll
+	facts.push_back("My favorite YouTube video is https://www.youtube.com/watch?v=dQw4w9WgXcQ ;)");
 
 	// Initialize the facts
 	facts.push_back("I have Tourette's Syndrome");
@@ -37,10 +54,6 @@ int main() {
 	facts.push_back("My New Year's resolution for 2018 is to be able to touch my toes (it was also last year's too)");
 	facts.push_back("My favorite anime is Haikyu!!");
 
-	// meme facts
-	facts.push_back("My favorite YouTube video is https://www.youtube.com/watch?v=dQw4w9WgXcQ :)");
-	facts.push_back("Actually, my real favorite YouTube video is https://www.youtube.com/watch?v=aT8ix3ZNlLM");
-
 	// generates a random number
 	srand((unsigned)time(0));
 	int random_integer;
@@ -49,8 +62,16 @@ int main() {
 
 	// while loop allows for endless random facts
 	do {
+		// print fact
 		random_integer = rand() % facts.size();
 		cout << "Fact: " << facts[random_integer] << endl;
+
+		// check if it's a meme
+		if (random_integer == 0) {
+			rickroll();
+		}
+
+		// ask for another
 		cout << "Would you like another fun fact? (y/n) ";
 		cin >> response;
 		if (response == "y") {
