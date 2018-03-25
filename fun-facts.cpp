@@ -46,12 +46,13 @@ int main() {
 	facts.push_back("My favorite quote is 'Everyone you'll ever meet knows something you don't' by Bill Nye");
 	facts.push_back("My favorite video game is Destiny");
 	facts.push_back("I programmed a Pokemon text-adventure in Java");
-	facts.push_back("So far, my favorite movie of 2018 is Black Panther (last year it was Thor: Ragnarok");
+	facts.push_back("So far, my favorite movie of 2018 is Black Panther (last year it was Thor: Ragnarok)");
 	facts.push_back("I am currently a CA for CS 385, Algorithms");
 	facts.push_back("This summer, I will be working at Northrop Grumman in Virginia for a summer internship");
 	facts.push_back("Last semester, I worked as a tutor for the Academic Support Center");
 	facts.push_back("My New Year's resolution for 2018 is to be able to touch my toes (it was also last year's too)");
 	facts.push_back("My favorite anime is Haikyu!!");
+	facts.push_back("I wrote a program in C++ to display fun facts about myself");
 
 	// generates a random number
 	srand((unsigned)time(0));
