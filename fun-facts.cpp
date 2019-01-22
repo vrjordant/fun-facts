@@ -34,7 +34,6 @@ int main() {
 	facts.push_back("My favorite YouTube video is https://www.youtube.com/watch?v=dQw4w9WgXcQ ;)");
 
 	// Initialize the facts
-	facts.push_back("I was diagnosed with Tourette's Syndrome in fifth grade");
 	facts.push_back("I play Pokemon songs on the piano");
 	facts.push_back("When I go to sleep, I count sheep in hexadecimal");
 	facts.push_back("My favorite movie of all time is Interstellar");
